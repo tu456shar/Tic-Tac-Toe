@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Classic 2 Player Game</p>
+
+        <div class="players">
+            <div class="player active" id="playerX">
+                <span>Player 1</span>
+                <strong>✕</strong>
+            </div>
+
+            <div class="player" id="playerO">
+                <span>Player 2</span>
+                <strong>○</strong>
+            </div>
+        </div>
+
+        <div class="status" id="status">
+            Player 1's Turn (X)
+        </div>
+
+        <div class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <div class="score-board">
+
+            <div class="score">
+                <span>Player 1</span>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score">
+                <span>Draws</span>
+                <strong id="scoreDraw">0</strong>
+            </div>
+
+            <div class="score">
+                <span>Player 2</span>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button id="restartBtn" class="restart-btn">
+                🔄 Restart Game
+            </button>
+
+            <button id="resetBtn" class="reset-btn">
+                Reset Score
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
